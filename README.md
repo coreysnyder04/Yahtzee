@@ -11,7 +11,11 @@ npm install should
 
 
 ** Setting Up Test File **  
-From there we created our `yahtzee.spec.js` file which housed our tests
+From there we created our `/spec/yahtzee.spec.js` file which housed our tests
 
-** Creating testable code **
-We created a `yahtzee.js` file to house the code which we would be testing. 
+** Creating testable code **  
+We created a `/routes/yahtzee.js` file to house the code which we would be testing.  
+
+** Referencing your code **  
+In our spec.js we reference our testable code by creating:
+`var Yahtzee = require('../routes/yahtzee.js');`
